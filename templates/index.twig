@@ -1,12 +1,17 @@
 {% extends "_master" %}
 
+{% block content %}
+
 {% set tag = craft.request().getParam('tag') %}
-{% set articles = craft.entries()
+{% set articles_query = craft.entries()
     .section('articles')
-    .relatedTo(['and', {element: tag}]).all()
 %}
 
-{% block content %}
+{% if tag|length %}
+	{% set articles_query = articles_query.relatedTo(['and', {element: tag}]) %}
+{% endif %}
+
+{% set articles = articles_query.all() %}
 
 {% for article in articles %}
     {% include '_partials/_articles/card' with { 'this' : article } %}
