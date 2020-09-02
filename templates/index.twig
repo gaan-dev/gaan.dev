@@ -13,6 +13,9 @@
 
 {% set articles = articles_query.all() %}
 
+{% if articles|length == 0 %}
+No articles posted yet. Please check back soon!
+{% endif %}
 {% for article in articles %}
     {% include '_partials/_articles/card' with { 'this' : article } %}
 {% endfor %}
