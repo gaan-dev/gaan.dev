@@ -1,0 +1,22 @@
+contentColumnType: string
+fieldGroup: 848007d2-801a-4a71-b193-68156b4a3074
+handle: project
+instructions: ''
+name: Project
+searchable: false
+settings:
+  allowLimit: false
+  allowMultipleSources: false
+  allowSelfRelations: false
+  limit: null
+  localizeRelations: false
+  selectionLabel: ''
+  showSiteMenu: true
+  source: 'taggroup:8cdcc18e-ebd2-40cd-9a3f-097b7a30a7d5'
+  sources: '*'
+  targetSiteId: null
+  validateRelatedElements: false
+  viewMode: null
+translationKeyFormat: null
+translationMethod: site
+type: craft\fields\Tags

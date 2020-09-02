@@ -1,0 +1,30 @@
+dateModified: 1599010802
+email:
+  fromEmail: admin@gaan.dev
+  fromName: Gaan
+  transportType: craft\mail\transportadapters\Sendmail
+plugins:
+  craft-prism-syntax-highlighting:
+    edition: standard
+    enabled: true
+    schemaVersion: 1.0.0
+  redactor:
+    edition: standard
+    enabled: true
+    schemaVersion: 2.3.0
+  simple-text:
+    edition: standard
+    enabled: true
+    schemaVersion: 1.0.2
+system:
+  edition: solo
+  live: true
+  name: Gaan
+  schemaVersion: 3.5.13
+  timeZone: America/Los_Angeles
+users:
+  allowPublicRegistration: false
+  defaultGroup: null
+  photoSubpath: null
+  photoVolumeUid: null
+  requireEmailVerification: true

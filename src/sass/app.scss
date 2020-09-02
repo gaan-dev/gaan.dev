@@ -1,0 +1,65 @@
+@tailwind base;
+
+@import 'prism.css';
+
+@font-face {
+	font-family: Sofia Pro Soft;
+	font-weight: 400;
+	src: url(/fonts/SofiaProSoftRegular.woff) format("woff");
+}
+@font-face {
+	font-family: Sofia Pro Soft;
+	font-weight: 600;
+	src: url(/fonts/SofiaProSoftMedium.woff) format("woff");
+}
+@font-face {
+	font-family: Sofia Pro Soft;
+	font-weight: 600;
+	src: url(/fonts/SofiaProSoftBold.woff) format("woff");
+}
+@font-face {
+	font-family: Spock;
+	font-weight: 800;
+	src: url(/fonts/SpockBold.woff) format("woff");
+}
+
+body{
+	font-family: "Sofia Pro Soft", Arial, sans-serif;
+	@apply .text-gray-900 .bg-gray-200;
+}
+
+h1,h2,h3,h4,h5,h6{
+	font-family: "Spock", "Times New Roman", serif;
+	@apply .text-blue-700;
+}
+
+h1{
+	@apply .text-4xl;
+}
+
+h2{
+	@apply .text-3xl;
+}
+
+.content-block{
+	&.images{
+		@apply .flex .flex-wrap;
+		.image:nth-child(4n){
+			flex-basis: 100%;
+		}
+	}
+	&.content{
+		@apply .leading-relaxed;
+		p{
+			@apply .pb-4;
+		}
+	}
+}
+
+pre.language-markup{
+	@apply .rounded-lg;
+}
+
+@tailwind components;
+
+@tailwind utilities;

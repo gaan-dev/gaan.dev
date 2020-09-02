@@ -1,0 +1,11 @@
+enableVersioning: true
+handle: articles
+name: Articles
+propagationMethod: all
+siteSettings:
+  9ef7568a-9a44-464e-8842-139f6d1b5593:
+    enabledByDefault: true
+    hasUrls: true
+    template: articles/entry
+    uriFormat: 'articles/{slug}'
+type: channel

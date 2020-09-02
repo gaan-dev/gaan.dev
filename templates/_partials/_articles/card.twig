@@ -1,0 +1,24 @@
+<article class="shadow-md bg-white my-4 p-4 rounded">
+    <div class="flex items-end">
+        <h2><a href="{{ this.url }}">{{ this.title }}</a></h2>
+        <aside class="text-gray-600 pb-1 pl-4">Posted on {{ this.postDate|date('M j, Y') }}
+    </div>
+    <div class="flex mt-2 mb-4">
+        {% for tag in this.tags %}
+        <div class="bg-gray-200 px-4 text-sm mr-2 rounded-full shadow ">{{ tag.title }}</div>
+        {% endfor %}
+        {% for tag in this.project %}
+        <div class="bg-blue-800 text-white px-4 text-sm mr-2 rounded-full shadow ">{{ tag.title }}</div>
+        {% endfor %}
+    </div>
+    <div>
+        {% set blocks = this.blocks %}
+        <ul>
+            {% for block in blocks %}
+            <li>
+                {% include '_blocks/_'~block.type with { 'this': block } %}
+            </li>
+            {% endfor %}
+        </ul>
+    </div>
+</article>

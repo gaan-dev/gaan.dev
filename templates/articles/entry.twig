@@ -1,0 +1,7 @@
+{% extends 'index' %}
+
+{% set this = entry %}
+
+{% block content %}
+    {% include '_partials/_articles/card' with { 'this' : entry } %}
+{% endblock %}

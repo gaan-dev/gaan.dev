@@ -1,0 +1,41 @@
+field: 543cec97-94ff-4896-a9bf-3a190af25b0d
+fieldLayouts:
+  32bb97e7-2826-43f0-a32c-17131e52b980:
+    tabs:
+      -
+        elements:
+          -
+            fieldUid: c6df791b-6823-4ccb-b353-244a8ea18dff
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            warning: null
+            width: 100
+        name: Content
+        sortOrder: 1
+fields:
+  c6df791b-6823-4ccb-b353-244a8ea18dff:
+    contentColumnType: text
+    fieldGroup: null
+    handle: codeContent
+    instructions: ''
+    name: Code
+    searchable: false
+    settings:
+      editorHeight: '4'
+      editorLanguage: markup
+      editorLanguageFiles:
+        - '@thejoshsmith/prismsyntaxhighlighting/assetbundles/prismsyntaxhighlighting/dist/js/prism/components/prism-markup.min.js'
+        - '@thejoshsmith/prismsyntaxhighlighting/assetbundles/prismsyntaxhighlighting/dist/js/prism/components/prism-markup.min.js'
+      editorLineNumbers: false
+      editorTabWidth: '4'
+      editorTheme: prism
+      editorThemeFile: '@thejoshsmith/prismsyntaxhighlighting/assetbundles/prismsyntaxhighlighting/dist/css/prism/themes/prism.css'
+    translationKeyFormat: null
+    translationMethod: none
+    type: thejoshsmith\prismsyntaxhighlighting\fields\PrismSyntaxHighlightingField
+handle: code
+name: Code
+sortOrder: 3

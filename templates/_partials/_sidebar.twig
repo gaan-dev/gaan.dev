@@ -1,0 +1,22 @@
+{% set tags = craft.tags().group('tags').all() %}
+{% set projects = craft.tags().group('project').all() %}
+
+<div class="flex flex-col md:mt-12 ml-8">
+	<div class="py-8">
+		<h6>Filter by tag</h6>
+		<ul class="pl-2 text-gray-700">
+			{% for tag in tags %}
+				<li><a href="?tag={{tag.id}}">{{ tag.title }}</a></li>
+			{% endfor %}
+		</ul>
+	</div>
+
+	<div class="flex flex-col">
+		<h6>Filter by project</h6>
+		<ul class="pl-2 text-gray-700">
+			{% for project in projects %}
+				<li><a href="?tag={{project.id}}">{{ project.title }}</a></li>
+			{% endfor %}
+		</ul>
+	</div>
+</div>

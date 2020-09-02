@@ -1,0 +1,8 @@
+baseUrl: $PRIMARY_SITE_URL
+handle: default
+hasUrls: true
+language: en-GB
+name: Gaan
+primary: true
+siteGroup: 958878f8-2c38-43b6-ae28-687966e3c519
+sortOrder: 1
